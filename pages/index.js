@@ -7,12 +7,12 @@ export default function Home({ pokemon }) {
       <ul>
         {pokemon.map((pokeman, index) => (
           <li key={index}>
-            <Link href={`/pokemon?id=${pokeman.url}`}>
+           
               <a className="border p-4 border-grey my-2 hover:shadow-md capitalize flex items-center text-lg bg-gray-200 rounded-md">
                 <span className="mr-2 font-bold">{index + 1}.</span>
                 {pokeman.title}
               </a>
-            </Link>
+           
           </li>
         ))}
       </ul>
